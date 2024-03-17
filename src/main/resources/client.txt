@@ -1,0 +1,8 @@
+Ivanov Ivan Ivanovich;81234567890;ivan@ru.ru
+Igor Igorevich Igorev;81234567890;aaa@ru.ru
+Petrov Peter Petrovich;81234567890;petr@ru.ru
+Georgij Georgovich;81234567890;georgij@ru.ru
+Egor;89012345678;qwe@ru.ru
+Egor Egorovich;89012345678;eee@ru.ru
+Dmitrij Dmitrievich;+79054567890;wer@ru.ru
+Mama;89673456789;mama@ma.ma
