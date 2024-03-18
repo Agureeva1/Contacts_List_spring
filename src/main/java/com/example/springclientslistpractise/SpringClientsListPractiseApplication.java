@@ -5,11 +5,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import java.io.IOException;
 import java.util.Scanner;
 
-import static com.example.springclientslistpractise.Client.dellClient;
-import static com.example.springclientslistpractise.Client.showAllClients;
+import static com.example.springclientslistpractise.MapClients.dellClient;
+import static com.example.springclientslistpractise.MapClients.showAllClients;
 
 /*
-Что нужно сделать
 Вам необходимо реализовать небольшое консольное приложение «Контакты». Сущность контакта представляет собой полное имя (fullName), номер телефона (phoneNumber) и адрес электронной почты (email).
 Приложение должно уметь:
 1.	Выводить все имеющиеся контакты пользователя в формате «Ф. И. О. | Номер телефона | Адрес электронной почты».
@@ -46,13 +45,12 @@ public class SpringClientsListPractiseApplication {
 				System.out.println("Client");
 			}
 			else if (line.equals("all")) {
-				if (!Client.mapClients.isEmpty()) showAllClients();
+				if (!MapClients.mapClients.isEmpty()) showAllClients();
 				else {
 					System.out.println("У Вас нет ни одного контакта");
 				}
 			}
 			else if (line.matches("(del [\\w.-]+@[\\w.-]+)"))  {
-				//service.showAllClients();
 				String[] splitLine = line.split(" ");
 				dellClient(splitLine[1]);
 				System.out.println("DEL");

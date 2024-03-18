@@ -6,11 +6,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 @Component
-public class Reader extends FileWriter {
+public class Writer{
 
     FileWriter writer;
 
-    public Reader() throws IOException {
-        super("src/main/resources/client.txt", true);
+    public Writer() throws IOException {
+       this. writer = new FileWriter(MapClients.filePath, true);
+    }
+
+    public FileWriter getWriter() {
+        return writer;
     }
 }
